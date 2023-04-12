@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com");
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 header{
     width: 100%;
     height: 100vh;
     background: linear-gradient( rgb(149, 93, 246),#ffffff);
 }
-
  header a{
     background-color: rgb(238, 93, 216);
     color: white;
@@ -56,6 +58,9 @@ nav{
 }
 span{
     color:rgb(238, 93, 216);
+    background: linear-gradient(135deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h1{
     font-size: 4em;
@@ -93,6 +98,10 @@ h1{
 h2{
     text-align: center;
     font-size: 3em;
+    background: linear-gradient(135deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 /*psudoclase hover*/
 a:hover{
@@ -200,10 +209,40 @@ footer{
 }
 footer img{
     margin-right: 50px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
 }
-
+footer img:hover{
+    /*rotate:90deg;*/
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
 .whats{
     position: fixed; 
     bottom: 10px;
     right: 10px;
 }
+.aviso{
+    position: relative;
+    display: inline-block;
+}
+.aviso1{
+    font-size: .8em;
+    display: none;
+    width: 500px;
+    border: solid black;
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1;
+}
+.aviso:hover .aviso1{
+    display: block;
+}
+
+              
