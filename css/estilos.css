@@ -245,4 +245,75 @@ footer img:hover{
     display: block;
 }
 
-              
+/*diseño de páginas complementarias*/
+
+.contenedor{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(#ffffff, rgb(149, 93, 246));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor1{
+    width: 50%;
+    height: 60vh;
+    background: #647eff55;
+    border-radius: 40px;
+}
+.contenedor1 img{
+    width: 5%;
+}
+
+/*Seudoelementos*/
+::-webkit-scrollbar{
+    background-color: #647eff;
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 6px;
+    background-color: purple;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.898);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: linear-gradient(pink , blue);
+}
+.hamburguesa{
+    display: none;
+}
+
+/*Ejemplo responsivo*/
+@media(max-width:900px){
+    .hamburguesa{
+        display: block;
+    }
+    p{
+        display: none;
+    }
+    ul{
+        text-align: center;
+        display: none;
+        width: 70%;
+        height: 80vh;
+        border:solid;
+        position: absolute;
+        right: 70px;
+        top: 10px;
+        background-color: rgb(238, 93, 216);;
+    }
+    li{
+        font-size: 2em;
+    }
+    a:hover{
+        background-color:  rgb(238, 93, 216);
+        color: white;
+    }
+    input:checked ~ul{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
