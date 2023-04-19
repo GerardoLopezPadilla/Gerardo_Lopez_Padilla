@@ -105,7 +105,7 @@ h2{
     
 }
 /*psudoclase hover*/
-a:hover{
+header a:hover{
     color: rgb(238, 93, 216);
     font-size: 30px;
     background-color: rgb(109, 47, 243);
@@ -153,18 +153,24 @@ a:hover{
     width: 60%;
     border: solid 5px rgb(66, 4, 95);
 }
-.Portafolio2 img{
+
+.Portafolio2 a{
     width: 0%;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
+    
 }
-.Portafolio2 img:hover{
+.Portafolio2 a:hover{
     cursor: crosshair;
     width: 40%;
     opacity: 1;
     filter: contrast(120%);
+}
+.a_porta img{
+    object-fit: cover;
+    position: absolute;
 }
 /*Aqui comienza la seccion contacto*/
 .Contacto{
@@ -246,11 +252,10 @@ footer img:hover{
     display: block;
 }
 
-/*diseño de páginas complementarias*/
-
+/*Diseño de páginas complementarias*/
 .contenedor{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background: linear-gradient(#ffffff, rgb(149, 93, 246));
     display: flex;
     align-items: center;
@@ -258,14 +263,55 @@ footer img:hover{
     flex-direction: column;
 }
 .contenedor1{
-    width: 50%;
-    height: 60vh;
-    background: #647eff55;
+    margin: auto;
+    width: 90%;
+    height: 70vh;
     border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
 }
-.contenedor1 img{
-    width: 5%;
+.card{
+    width: 20%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
 }
+.card:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.card img{
+    width: 100%;
+    border-radius: 30px;
+}
+.card a{
+    text-decoration: none;
+    color: #647eff;
+}
+.card a:hover{
+    background-color: #ffffff;
+    padding: 0;
+    font-size: 1em;
+    color: #647eff;
+}
+
+
+.atras{
+    padding: 0;
+}
+.atras img{
+    width: 15%;
+    padding: 0;
+}
+.atras:hover{
+    padding: 0;
+    background-color: rgb(149, 93, 246);
+    color: rgb(149, 93, 246);
+}
+
 
 /*Seudoelementos*/
 ::-webkit-scrollbar{
@@ -284,8 +330,28 @@ footer img:hover{
 .hamburguesa{
     display: none;
 }
+/*Menú desplegable*/
+.menu_desplegable{
+    background-color: rgb(238, 93, 216);
+    color: white;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60px;
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+.check{
+    display: none;
+    position: absolute;
+}
+.porta:hover .menu_desplegable{
+    display: block;
+}
 
-/*Ejemplo responsivo*/
+
+/*Configuración responsiva*/
 @media(max-width:900px){
     .hamburguesa{
         display: block;

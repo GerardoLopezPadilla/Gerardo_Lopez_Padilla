@@ -14,13 +14,19 @@
                 <img src="img/descarga.png" alt="">
                 <p>Gerardo López Padilla</p>
             </div>
-            <input type="checkbox" id="menu">
+            <input type="checkbox" id="menu" class="check">
             <label for="menu"><img src="img/menu-button-of-three-horizontal-lines.png" alt="boton menú" class="hamburguesa"></label>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acerca_de">Acerca de </a></li>
-                <li><a href="">Portafolios</a></li>
-                <li><a href="">Contacto</a></li>
+                <li class="porta"><a href="">Portafolio</a>
+                    <ul class="menu_desplegable">
+                        <li>Diseño</li>
+                        <li>Base</li>
+                        <li>Programación</li>
+                    </ul>
+                </li>
+                <li><a href="#scontacto">Contacto</a></li>
 
             </ul>
         </nav>
@@ -55,13 +61,24 @@
             <h2>Portafolio</h2>
             <div class="Portafolio1">
                 <div class="Portafolio2">
-                    <img src="img/html.png" alt="logo de html">
-                    <img src="img/sql.png" alt="logo de sql">
-                    <img src="img/python.png" alt="logo de python">
+                    <a href="diseño.html" class="a_porta"><img src="img/html.png" alt="logo de html"></a>
+                    <!-- <input type="checkbox" id="p_diseño" class="check">
+                    <label for="p_diseño"><img src="img/html.png" alt="logo de html"></label> -->
+                    <!-- <img src="img/html.png" alt="logo de html"> -->
+
+                    <a href="base_de_datos.html" class="a_porta"><img src="img/sql.png" alt="logo de sql"></a>
+                    <!-- <input type="checkbox" id="p_base" class="check">
+                    <label for="p_base"><img src="img/sql.png" alt="logo de sql"></label> -->
+                    <!-- <img src="img/sql.png" alt="logo de sql"> -->
+
+                    <a href="programacion.html" class="a_porta"><img src="img/python.png" alt="logo de python"></a>
+                    <!-- <input type="checkbox" id="p_programacion" class="check">
+                    <label for="p_programacion"><img src="img/python.png" alt="logo de python"></label> -->
+                    <!-- <img src="img/python.png" alt="logo de python"> -->
                 </div>
             </div>
         </section>
-        <section class="Contacto">
+        <section class="Contacto" id="scontacto">
             <h2>Contacto</h2>
             <div class="contacto1">
                 <div class="contacto2">
